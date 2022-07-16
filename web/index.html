@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -27,12 +28,31 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon.png" />
 
   <title>romanstuts</title>
   <link rel="manifest" href="manifest.json">
+  <style>
+    body {
+      background: #50AF24;
+    }
+
+    #loadingIcon {
+      position: absolute;
+      top: calc(50%);
+      left: calc(50%);
+      /* background: url('/assets/images/logo.png'); */
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 150px;
+    }
+  </style>
 </head>
+
 <body>
+  <div id="loadingIcon">
+    <img src="logo.png" alt="logo" />
+  </div>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
@@ -101,4 +121,5 @@
     }
   </script>
 </body>
+
 </html>
